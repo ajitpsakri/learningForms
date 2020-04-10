@@ -1,0 +1,34 @@
+<!DOCTYPE html> <!-- it tells the browser that this file is HTML5  -->
+<html>
+<head>
+    <title>register</title>
+</head>
+<body>
+    
+<div>
+    <form method="GET"><!--how to send form-data after filling the form and pressing summit 
+        and (GET) is a method in which the data is stored in URL(don't send sensitive information)-->
+        <p>enter your name plese</p>
+        <span> First name</span><input type="text" name="firstname"><br><!--create a place in memory called first name and 
+            store firstname of the person filling form in that memory place-->
+        last name <input type="text" name="lastname"><br>
+        email <input type="email" name="email" required ><br>
+        password <input type="password" name="password" minlength="9">
+        birthday <input type="date" name="birthday"><br>
+        gender <br>
+         <input type="Radio" name="gender" value="male">male <br><!--radio says browser create a button and select only one 
+            from a radio groups(many radio buttons) which have same name()name attribute-->
+         <input type="Radio" name="gender" value="femail">femail <br><!--value returns the text femail to the browser when user selects femail-->
+         <input type="Radio" name="gender" value="others">others<br>
+         cars : <br>
+         <!-------------------------------------------------------------------------------------------------------->
+         <select multiple><!--itt creates the drop down menu-->
+             <option value="ajit" name="ajit" value="ajit">ajit</option><!--first value is creating option as ajit second value id returning text "ajit" to server-->
+             <option value="amit" name="amit" value="amit">amit</option>
+         </select><br>
+         <input type="submit">
+        <input type="reset">
+    </form>
+</div>
+</body>
+</html>
